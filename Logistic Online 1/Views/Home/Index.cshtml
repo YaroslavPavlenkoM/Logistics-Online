@@ -1,0 +1,318 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div id="sidebar" class="col-md-3">
+        <div id="request">
+            <span class="subtitle1">ЗАЯВКА НА ПЕРЕВОЗКУ №15-08</span>
+            <button type="button" class="btn btn-info smallButton"><span>Новая</span></button>
+            <div class="informationRequest">
+                <img src="~/images/Lory.png" height="13" alt="logo"/>
+                <h5>Заказчик:</h5> <br>
+                <span>Альфа Транс Груп, ТОВ</span>
+            </div>
+            <div class="smallTopLine"></div>
+
+            <div class="informationRequest">
+                <img src="~/images/People2.png" height="16" alt="logo" />
+                <h5>Контактное лицо:</h5> <br>
+                <span>Данилевский Н.Д.</span> <br>
+                <span>+38 (063) 525 03 02</span>
+            </div>
+            <div class="smallTopLine"></div>
+
+            <div class="informationRequest">
+                <img src="~/images/Money2.png" height="16" alt="logo" />
+                <h5>Сума по заявке:</h5> <br>
+                <span>По курсу НБУ на 26.08.15</span> <br>
+                <h5>USD     </h5><span>2 900</span> <br>
+                <h5>UAH     </h5><span>63 800</span> <br>
+            </div>
+            <div class="smallTopLine"></div>
+
+            <div class="informationRequest">
+                <img src="~/images/Document.png" height="13" alt="logo" />
+                <h5>Договор:  </h5><span>LO-15-09</span>
+            </div>
+            <div class="smallTopLine"></div>
+
+            <div class="informationRequest">
+                <img src="~/images/Box2.png" height="12" alt="logo" />
+                <h5>Статус оплаты:  </h5><button class="btn btn-danger smallButton">не оплачена</button>
+            </div>
+        </div>
+
+        <div id='comments'>
+            <i class="material-icons">comment</i>
+            <span class="subtitle2">Коментарии к заявке</span>
+            <div class="smallTopLine" style="background-color: #f0f0f0; margin: 12px 0;"></div>
+            <div class="commentsBox" style="background-color: #f0f0f0;">
+                <p>
+                    <span class="subtitle3">Борсучок О.П. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="timeComment">27.06.2015 07:35</span>
+                </p>
+                <span class="textComment">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
+            </div>
+            <div class="commentsBox">
+                <p>
+                    <span class="subtitle3">Гаркуши И.В. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="timeComment">27.06.2015 07:35</span>
+                </p>
+                <span class="textComment">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span>
+            </div>
+
+        </div>
+        <div id='creatorComments'>
+            <input type="text" class="form-control" id="usr">
+            <div style="">
+                <img src="~/images/Add People.png" height="24" alt="logo" />
+                <span style="font-size: 18px; color: #d6d6d6"> | </span>
+                <img src="~/images/Clip.png" height="24" alt="logo" />
+                <button type="button" class="btn btn-primary">Отправить</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-9" id='mainContent'>
+        <div class="row" id='contentMenu'>
+            <input id="tab1" data-nameSectionRef='#content1' type="radio" name="tabs" checked>
+            <label for="tab1">
+                <div class="row elementContentMenu">
+                    <img id='img0' src="~/images/Box Gray.png" height="21" alt="logo" />
+                    <span>&nbsp;Информация о грузе</span>
+                </div>
+            </label>
+
+            <input id="tab2" data-nameSectionRef='#content2' type="radio" name="tabs">
+            <label for="tab2">
+                <div class="row elementContentMenu">
+                    <img id='img1' src="~/images/CheckIcon Gray.png" height="21" alt="logo" />
+                    <span>&nbsp;Выполненые заявки</span>
+                </div>
+            </label>
+
+            <input id="tab3" data-nameSectionRef='#content3' type="radio" name="tabs">
+            <label for="tab3">
+                <div class="row elementContentMenu">
+                    <img id='img2' src="~/images/Money Gray.png" height="21" alt="logo" />
+                    <span>&nbsp;Оплата и счета</span>
+                </div>
+            </label>
+        </div>
+        <section class="tabConent" id="#content1">
+            <div class="elementMoving">
+                <a id='link0' href="#" data-toggle="collapse" data-target="#hideMe0" style="float: right; padding-right: 10px;">
+                    <span class="subtitle2">Погрузка 1</span>
+                    <span id='iconAction0' class="glyphicon glyphicon-menu-down"></span>
+                </a>
+                <div id="hideMe0" class="collapse out" style="width: 1020px;">
+                    <table>
+                        <td style="vertical-align: top;">
+                            <table class="mainInfMoving">
+                                <tr><th>Адрес погрузки:</th><td>ул. Соборная 4, Винница</td></tr>
+                                <tr><th>План. дата погрузки:</th><td>26.08.15 15:00</td></tr>
+                                <tr><th>Грузотправитель:</th><td>ТОВ "Вінпроммаш"</td></tr>
+                                <tr><th>Контактное лицо:</th><td>Данилевский Н.Д.</td></tr>
+                                <tr><th>Телефон:</th><td>+ 38 (097) 112 98 14</td></tr>
+                                <tr><th>Представление документов:</th><td><b>Грузополучатель:</b> CMR/TTH Инвойс</td></tr>
+                            </table>
+                        </td>
+                        <td style="padding-left: 15px; vertical-align: top;">
+                            <table class="additionalInfMoving">
+                                <thead>
+                                    <tr>
+                                        <th>Описание груза</th>
+                                        <th>Особености</th>
+                                        <th>Упаковка</th>
+                                        <th>Вес(кг)</th>
+                                        <th>Обьем (м3)</th>
+                                        <th>Погрузка</th>
+                                        <th>Погружено, кол.</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>Мешки цемента</td>
+                                    <td>грязный</td>
+                                    <td>мешок без палеты</td>
+                                    <td>1000</td>
+                                    <td>0.95</td>
+                                    <td>Задняя</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr style="background-color: #f9f9f9;">
+                                    <td>Крановые блоки</td>
+                                    <td>опсный<br>(Класс q)<br>ценный<br>(5000 EUR)<br>негабарит<br>(H=2 W=1 L=15)</td>
+                                    <td>не упакован Fin-пакет</td>
+                                    <td>5000</td>
+                                    <td>2.8</td>
+                                    <td>Верхняя</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="text-align: right;"> <img src="~/images/Scales.png" alt="logo" /> Всего: </td>
+                                    <td><b>6000 кг</b></td>
+                                    <td style="text-align: right;"><b>3.75 м3</b></td>
+                                    <td colspan="3"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </table>
+                </div>
+            </div>
+
+            <div class="elementMoving">
+                <a id='link1' href="#" data-toggle="collapse" data-target="#hideMe1" style="float: right; padding-right: 10px;">
+                    <span class="subtitle2">Погрузка 2</span>
+                    <span id='iconAction1' class="glyphicon glyphicon-menu-down"></span>
+                </a>
+                <div id="hideMe1" class="collapse out" style="width: 1020px;">
+                    <table>
+                        <td style="vertical-align: top;">
+                            <table class="mainInfMoving">
+                                <tr><th>Адрес погрузки:</th><td>ул. Соборная 4, Винница</td></tr>
+                                <tr><th>План. дата погрузки:</th><td>26.08.15 15:00</td></tr>
+                                <tr><th>Грузотправитель:</th><td>ТОВ "Вінпроммаш"</td></tr>
+                                <tr><th>Представление документов:</th><td><b>Грузополучатель:</b> CMR/TTH Инвойс</td></tr>
+                            </table>
+                        </td>
+                        <td style="padding-left: 15px; vertical-align: top;">
+                            <table class="additionalInfMoving">
+                                <thead>
+                                    <tr>
+                                        <th>Описание груза</th>
+                                        <th>Особености</th>
+                                        <th>Упаковка</th>
+                                        <th>Вес(кг)</th>
+                                        <th>Обьем (м3)</th>
+                                        <th>Погрузка</th>
+                                        <th>Погружено, кол.</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>Нарезные стержни</td>
+                                    <td>-</td>
+                                    <td>коробка без палеты</td>
+                                    <td>400</td>
+                                    <td>2.25</td>
+                                    <td>Задняя</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="text-align: right;"> <img src="~/images/Scales.png" alt="logo" /> Всего: </td>
+                                    <td><b>6000 кг</b></td>
+                                    <td style="text-align: right;"><b>3.75 м3</b></td>
+                                    <td colspan="3"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </table>
+                </div>
+            </div>
+            <div class="elementMoving">
+                <a id='link2' href="#" data-toggle="collapse" data-target="#hideMe2" style="float: right; padding-right: 10px;">
+                    <span class="subtitle2">Выгрузка 1</span>
+                    <span id='iconAction2' class="glyphicon glyphicon-menu-down"></span>
+                </a>
+                <div id="hideMe2" class="collapse out" style="width: 1020px;">
+                    <table>
+                        <td style="vertical-align: top;">
+                            <table class="mainInfMoving">
+                                <tr><th>Адрес погрузки:</th><td>ул. Соборная 4, Винница</td></tr>
+                                <tr><th>План. дата погрузки:</th><td>26.08.15 15:00</td></tr>
+
+                            </table>
+                        </td>
+                        <td style="padding-left: 15px; vertical-align: top;">
+                            <table class="additionalInfMoving">
+                                <thead>
+                                    <tr>
+                                        <th>Описание груза</th>
+                                        <th>Особености</th>
+                                        <th>Упаковка</th>
+                                        <th>Вес(кг)</th>
+                                        <th>Обьем (м3)</th>
+                                        <th>Погрузка</th>
+                                        <th>Погружено, кол.</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>Мешки цемента</td>
+                                    <td>грязный</td>
+                                    <td>мешок без палеты</td>
+                                    <td>1000</td>
+                                    <td>0.95</td>
+                                    <td>Задняя</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr style="background-color: #f9f9f9;">
+                                    <td>Крановые блоки</td>
+                                    <td>опсный<br>(Класс q)<br>ценный<br>(5000 EUR)<br>негабарит<br>(H=2 W=1 L=15)</td>
+                                    <td>не упакован Fin-пакет</td>
+                                    <td>5000</td>
+                                    <td>2.8</td>
+                                    <td>Верхняя</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="text-align: right;"> <img src="~/images/Scales.png" alt="logo" /> Всего: </td>
+                                    <td><b>6000 кг</b></td>
+                                    <td style="text-align: right;"><b>3.75 м3</b></td>
+                                    <td colspan="3"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </table>
+                </div>
+            </div>
+            <div class="elementMoving">
+                <a id='link3' href="#" data-toggle="collapse" data-target="#hideMe3">
+                    <span class="subtitle2">Выгрузка 2</span>
+                    <span id='iconAction3' class="glyphicon glyphicon-menu-down"></span>
+                </a>
+                <div id="hideMe3" class="collapse out" style="width: 1020px;">
+                    <table>
+                        <td style="vertical-align: top;">
+                            <table class="mainInfMoving">
+                                <tr><th>Адрес погрузки:</th><td>ул. Соборная 4, Винница</td></tr>
+                                <tr><th>План. дата погрузки:</th><td>26.08.15 15:00</td></tr>
+                            </table>
+                        </td>
+                        <td style="padding-left: 15px; vertical-align: top;">
+                            <table class="additionalInfMoving">
+                                <thead>
+                                    <tr>
+                                        <th>Описание груза</th>
+                                        <th>Особености</th>
+                                        <th>Упаковка</th>
+                                        <th>Вес(кг)</th>
+                                        <th>Обьем (м3)</th>
+                                        <th>Погрузка</th>
+                                        <th>Погружено, кол.</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>Нарезные стержни</td>
+                                    <td>-</td>
+                                    <td>коробка без палеты</td>
+                                    <td>400</td>
+                                    <td>2.25</td>
+                                    <td>Задняя</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="text-align: right;"> <img src="~/images/Scales.png" alt="logo" /> Всего: </td>
+                                    <td><b>6000 кг</b></td>
+                                    <td style="text-align: right;"><b>3.75 м3</b></td>
+                                    <td colspan="3"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="tabConent" id="#content2">bn</section>
+        <section class="tabConent" id="#content3">bсорівоn</section>
+    </div>
+</div>

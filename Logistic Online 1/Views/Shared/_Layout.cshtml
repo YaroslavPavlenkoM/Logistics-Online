@@ -1,0 +1,61 @@
+﻿@using Microsoft.AspNet.Identity
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/Scripts/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="~/Content/Style.css" rel="stylesheet" />
+    <link href="~/Content/tabMenuStyle.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/Action.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row title">
+            <div id='nameTitle' class="col-md-7"><a href="http://localhost:56139/Home/Index"> <img src="~/images/Title name.png" /></a> </div>
+            <div id="titleSettings" class="col-md-5">
+                <div class="input-group" style="width: 238px; float: left; padding-right: 36px; margin-top: 2px; margin-left: 70px">
+                    <input id='searchTitle' type="text" class='form-control' aria-describedby='basic-addon1' placeholder="Search" name=""> <!--id='searchTitle'-->
+                    <span class="input-group-addon iconSearch">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </span>
+                </div>
+                <div data-toggle="modal" data-target="#myModal">
+                    <img src="~/images/People.png" />
+                    @if (Request.IsAuthenticated)
+                    {
+                        <span id='nameUser'>@User.Identity.Name</span>
+                    }
+                    <span class="glyphicon glyphicon-menu-down" style="color: #cce7ff; padding-left: 12px;"></span>
+                </div>
+                <div id="myModal" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="close" type="button" data-dismiss="modal">×</button>
+                                <div class="modal-title" style="text-align:center; font-size:22px">
+                                    @Html.ActionLink("Регистрация", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })
+                                </div>
+                            </div>
+                            <div class="modal-body" style="text-align:center; font-size:22px">
+                                @Html.ActionLink("Выполнить вход", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @RenderBody()
+    </div>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

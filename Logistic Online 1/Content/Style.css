@@ -1,0 +1,287 @@
+body {
+	background-color: #efefef;
+}
+
+.title {
+	background-color: #5882b2;
+}
+
+#nameTitle {
+ 	position: relative;
+ 	height: 44px;
+}
+
+#nameTitle img {
+	display: block;
+	position: absolute;
+    top: 50%;
+    margin-top: -14px;
+}
+
+#titleSettings {
+	margin-top: 6px;
+	margin-bottom: 6px;
+	background-color: #5882b2;
+}
+
+#searchTitle {
+	width: 202px;
+	height: 28px;
+	border-radius: 12px 0 0 12px;
+	background-color: #375e89;
+	border-color: #375e89;
+	color: white;
+
+}
+
+.iconSearch {
+    font-size: 12px;
+    color: #aed0f7;
+    background-color: #375e89;
+    border: 0;
+    border-radius: 12px;
+    
+}
+
+input[type="text"]#searchTitle::-webkit-input-placeholder {
+  color: #aed0f7;
+  font-size: 12px;
+  font-style: italic;
+}
+
+#nameUser {
+	padding-left: 12px;
+	font-size: 12px;
+    font-weight: 600;
+    color: #cce7ff;
+}
+
+#sidebar {
+	padding: 0px;
+	width: 282px;
+	height: 700px;
+}
+
+#request {
+	width: 282px;
+	
+	height: 392px;
+	background-color: #375e89;
+	padding: 15px;
+}
+
+.subtitle1 {
+	display: block;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.smallButton {
+	border-radius: 12px;
+	height: 20px; 
+	padding: 0px 10px;
+}
+
+.smallButton span {
+	font-size: 13px;
+}
+
+.informationRequest {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.informationRequest h5 {
+	display: inline;
+	color: #7cb6f5;
+}
+
+.informationRequest span {
+	color: white;
+}
+
+.smallTopLine {
+	width: 246px;
+	height: 1px;
+	background-color: #7cb6f5;
+}
+
+#comments {
+    height: 282px;
+    padding-top: 16px;
+    padding-left: 16px;
+    width: 282px;
+    background-color: white;
+}
+
+.subtitle2 {
+	color: #4e739f;
+	font-weight: bold; 
+	font-size: 16px;
+}
+
+.subtitle3 {
+	color: #4e739f;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.subtitle4 {
+	color: #737373;
+	font-size: 16px;
+}
+
+#comments .material-icons {
+	color: #46668c; 
+	font-size: 28px; 
+	display: block; 
+	padding-right: 12px; 
+	float: left;
+}
+
+.commentsBox {
+	width: 246px;
+	border: 1px solid #f1f1f1;
+	margin-bottom: 7px;
+	border-radius: 4px;
+	padding: 5px;
+}
+
+.timeComment {
+	font-size: 12px; 
+	color: #a0a1a3; 
+	text-indent: 1.5em;
+}
+
+.textComment {
+	color: #585858; 
+	font-size: 12px;
+}
+
+#creatorComments {
+	border-top: 2px solid #f0f0f0; 
+	width: 282px; 
+	height: 84px; 
+	background-color: white; 
+	padding-left: 16px; 
+	padding-top: 8px;
+}
+
+#creatorComments input {
+	width: 248px;
+	border-radius: 2px 2px 0 0;
+}
+
+#creatorComments div {
+	background-color: #f1f1f1; 
+	border: 1px solid #cccccc; 
+	height: 34px; width: 248px; 
+	border-radius: 0 0 2px 2px; 
+	border-top: 0px;
+}
+
+#creatorComments button {
+	border-radius: 0px; 
+	float: right;
+}
+
+#mainContent {
+	width: 1067px;
+	height: 600px;
+}
+
+#contentMenu {
+	background-color: white;
+	padding-left: 38px;
+	margin-bottom: 20px;
+}
+
+.elementContentMenu {
+	margin-right: 16px;
+	float: left;
+	height: 42px;
+	padding-top: 8px;
+}
+
+.elementMoving {
+	padding-left: 10px;
+	background-color: white;
+	width: 1036px;
+	margin-left: 8px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	min-height: 40px;
+}
+
+.elementMoving a {
+	float: right; 
+	padding-right: 10px; 
+	height: 40px; 
+	width: 1036px; background-color: white; 
+	padding-top: 10px; 
+	padding-left: 10px; 
+	text-decoration: none;
+}
+
+.elementMoving a .glyphicon {
+	display: block; 
+	float: right;
+}
+
+.elementMoving div {
+	background-color: white; 
+	width: 994px;
+	margin-top: 4px;
+	padding-top: 4px;
+	padding-bottom: 10px;
+}
+
+.mainInfMoving {
+
+	font-size: 13px;
+	border-top: 1px solid #dddddd;
+	float: left;
+}
+
+.mainInfMoving th {
+	color: #a9adb0;
+	font-weight: normal;
+	padding-top: 8px;
+	padding-bottom: 4px;
+	padding-right: 30px;
+}
+
+.mainInfMoving td {
+	padding-top: 8px;
+	padding-bottom: 4px;
+	width: 160px;
+}
+
+.additionalInfMoving {
+	font-size: 13px;
+	width: 690px;
+}
+
+.additionalInfMoving th {
+	padding-left: 5px;
+	background-color: #eaeaea;
+	width: 98px;
+}
+
+.additionalInfMoving td {
+	padding-left: 5px;
+	padding-right: 3px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.LabelControl {
+    padding-top: 0px;
+    text-align: left;
+
+}
+
+.FormControl {
+    width: 64%;
+}
